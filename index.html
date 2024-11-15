@@ -1,24 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APIS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(255, 0, 0);
+            color: rgb(40, 231, 15);
+            padding: 0.2rem 5rem 0 5rem;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <div class="nav">
+            <img id="logoPokemon" src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Symbol.jpg"
+                alt="logo_Pokemon">
+            <div id="buttons" class="btn">
+                <button id="apiButton">PokeAPI</button>
+                <button id="apiButton2">Button2</button>
+                <button id="apiButton3">Button3</button>
+                <button id="apiButton4">Button4</button>
+                <button id="apiButton5">Button5</button>
+                <button id="apiButton6">Button6</button>
+                <button id="apiButton7">Button7</button>
+                <button id="apiButton8">Button8</button>
+                <button id="apiButton9">Button9</button>
+                <button id="apiButton10">Button10</button>
 
-    <div id="buttons">
-        <button id="apiButton">PokeAPI</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="pokedex">
+        <h1>Pokedex</h1>
+        <div>
+            <label for="search">Buscar Pokemon</label>
+            <input type="text" id="search" placeholder="Ingrese nombre o número">
+            <button id="btn_search">Buscar</button>
+        </div>
+        <div class="dataSearch">
+            <div id="pokeData"></div>
+            <div id="pokeContainer">Container:</div>
+        </div>
     </div>
-    //PockeAPI-----------------------------------------------------
-    <pre id="apiData">Data</pre>
-    <p id="base_experience">Xperience</p>
-    <p id="base_icons">icons</p>
 
-    Imagenes:
-    <img id="images" src="">
-//-------------------------------------------------------------
-    
-<script src="main.js"></script>
+    <div class="poke">
+        <div>
+            //PockeAPI-----Pruebas-----Test-------------------------------------------
+            <br />
+            Imagenes:
+            <img id="images" src="" />
+            <hr />
+
+            Data:
+            <div>
+                <pre id="apiData">Name</pre>
+                <p id="base_experience">Xperience</p>
+                Audio:
+                <br>
+                <audio id="audio" controls src=""></audio>
+                <br>
+                <!--p id="base_icons">icons</p-->
+            </div>
+
+
+            Ico Generación VII:
+            <img id="base_img" src="" />
+        </div>
+
+        <div>
+            //PockeAPI----------------Test 2-------------------------------------
+            <br />
+            Imagenes:
+            <p id="imagesPikachu"></p>
+            <hr />
+
+            Data:
+            <div>
+                <pre id="apiDataPikachu">DataPokemon</pre>
+                <p id="base_experience_pikachu">Xperience</p>
+                <p id="base_icons_pikachu">icons</p>
+                Audio:
+                <div style="background-color: white; width: 18rem; height: 3rem; border-radius: 2rem;"
+                    id="audioPikachu"></div>
+            </div>
+        </div>
+    </div>
+
+    //-------------------------------------------------------------
+
+
+
+    <script src="main.js"></script>
+    <script src="pokedex.js"></script>
 </body>
+
 </html>
