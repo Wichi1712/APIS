@@ -18,7 +18,7 @@ async function pokemon() {
         `
         <h2>${data.name.toUpperCase()}</h2>
         <p>Numero: ${data.id}</p>
-        <p>altura: ${data.height}</p>
+        <p>altura: ${data.height/10}m.</p>
         <p>Peso: ${data.weight/10}g.</p>
         `;
 
